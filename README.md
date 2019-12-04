@@ -62,16 +62,22 @@ Already up to date.
 第三步，合并 feature 分支到 master 分支
 ```console
 $ git checkout master
+$ git pull
 $ git merge --no-ff feature/request-20191205-01 -m "merge commit branch feature/request-20191205-01 to master" 
 $ git push origin master
 ```
 > 说明：git merge --no-ff feature 这一步是合并提交 feature 分支的代码。
 
+
 第四步，删除 feature 分支
 feature 分支是临时分支，开发完毕后，应该删除
 ```console
+$ git branch -d feature/request-20191205-01
 $ git push origin :feature/request-20191205-01
 ```
+> 说明：git branch -d feature 这一步是删除本地 feature 分支。
+
+> 说明：git push origin :feature 这一步是删除远程 feature 分支。
 
 ## 4. 创建 bug 分支
 测试人员在系统测试或验收测试环节测试出 bug 后，会提交一个新需求，开发人员领取任务，创建 bug 分支，修复该 bug。
