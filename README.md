@@ -44,6 +44,7 @@ $ git branch -v
 ### 3.1 在 feature 分支下工作
 编写功能代码、单元测试代码、集成测试代码；执行单元测试和集成测试，完成后推送到 feature 分支。
 ```console
+$ touch feature-20191205-01.txt
 $ git add -A
 $ git commit -m "finish feature/request-20191205-01"
 $ git push origin feature/request-20191205-01
