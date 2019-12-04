@@ -131,7 +131,7 @@ $ git push origin :bug/bug-20191205-01
 ```console
 $ git checkout -b release/1.0 master 
 Switched to a new branch 'release/1.0'
-$ git tag -a 1.0
+$ git tag -a 1.0 -m "release v1.0"
 ```
 
 ## 6. 创建 hotfix 分支
