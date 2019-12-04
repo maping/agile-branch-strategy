@@ -133,6 +133,7 @@ $ git checkout -b release/1.0 master
 Switched to a new branch 'release/1.0'
 $ git tag -a 1.0 -m "release v1.0"
 $ git push origin release/1.0
+$ git push origin release/1.0 --tags
 ```
 
 ## 6. 创建 hotfix 分支
