@@ -62,8 +62,8 @@ Already up to date.
 第三步，合并 feature 分支到 master 分支
 ```console
 $ git checkout master
-$ git merge --no-ff feature/request-20191205-01
-$ git push origin master // 推送 commit
+$ git merge --no-ff feature/request-20191205-01 -m "merge commit branch feature/request-20191205-01 to master" 
+$ git push origin master
 ```
 > 说明：git merge --no-ff feature 这一步是合并提交 feature 分支的代码。
 
