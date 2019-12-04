@@ -110,7 +110,8 @@ Already up to date.
 第三步，合并 bug 分支到 master 分支
 ```console
 $ git checkout master
-$ git merge --no-ff bug/bug-20191205-01
+$ git pull
+$ git merge --no-ff bug/bug-20191205-01 -m "merge commit branch bug/bug-20191205-01 to master" 
 $ git push origin master
 ```
 > 说明：git merge --no-ff bug 这一步是合并提交 bug 分支的代码。
@@ -118,8 +119,12 @@ $ git push origin master
 第四步，删除 bug 分支
 bug 分支是临时分支，开发完毕后，应该删除
 ```console
+$ git branch -d bug/bug-20191205-01
 $ git push origin :bug/bug-20191205-01
 ```
+> 说明：git branch -d bug 这一步是删除本地 bug 分支。
+
+> 说明：git push origin :bug 这一步是删除远程 bug 分支。
 
 ## 5. 创建 release 分支
 正常情况下，所有测试通过之后，所有 bug 修复之后，可以正式发版了。
