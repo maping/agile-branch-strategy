@@ -85,12 +85,14 @@ $ git push origin :feature/request-20191205-01
 $ git checkout -b bug/bug-20191205-01 master 
 Switched to a new branch 'bug/bug-20191205-01'
 $ git branch -v
-* master b86be18 first commit
+* bug/bug-20191205-01 ca7311b Merge branch 'master' of https://github.com/maping/agile-branch-strategy
+  master              ca7311b Merge branch 'master' of https://github.com/maping/agile-branch-strategy
 ```
 
 ### 4.1 在 bug 分支下工作
 编写 bug 修复代码、单元测试代码、集成测试代码；执行单元测试和集成测试，完成后推送到 bug 分支。
 ```console
+$ touch bug-20191205-01.txt
 $ git add -A
 $ git commit -m "finish bug/bug-20191205-01"
 $ git push origin bug/bug-20191205-01
