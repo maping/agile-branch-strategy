@@ -37,7 +37,8 @@ feature 分支是根据需求来的，每一个用户故事可以作为一个分
 $ git checkout -b feature/request-20191205-01 master 
 Switched to a new branch 'feature/request-20191205-01'
 $ git branch -v
-* master b86be18 first commit
+* feature/request-20191205-01 b86be18 first commit
+  master                      b86be18 first commit
 ```
 
 ### 3.1 在 feature 分支下工作
